@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Secrete Message For @Femi</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+      body{
+    background-image: url("https://dl.dropbox.com/s/am8z2qfr8vgacnk/IMG_20210116_174754_665.jpg?");
+    background-size:100% auto;
+    background-repeat: no-repeat ;
+    background-attachment:fixed;
+    color: black;
+}
+#a{
+    text-align:center ;
+    font-size:60px;
+    font-weight:bolder ;
+    color:#E212C457;
+}
+#b,#c,#d{
+    background-color:rgb(225,225,225,0.1);
+    padding:5px;
+    box-shadow:5px 5px 10px rgb(220,225,225,0.3);
+}
+c{
+    background-color:blue;
+    backdrop-filter:blur(1px);
+}
+ul{
+    list-style-type:square ;
+    color:red;
+    text-shadow:3px 3px 5px rgb(0,0,0);
+    font-size:20px;
+}
+#name{
+    width:300px;
+    height:30px;
+    background-color: rgb(225,225,225,0.1);
+    border-radius:30px;
+    border-color: rgb(0,0,225,0.3);
+    text-align:center;
+    font-size:40px;
+}
+textarea{
+    width:300px;
+    height:100px;
+    background-color: rgb(225,225,225,0.1);
+    border-radius:30px;
+    border-color: rgb(0,0,225,0.3);
+    text-align:center;
+    font-size:22px;
+}
+textarea::placeholder, input::placeholder{
+    color:black;
+    font-size:25px;
+}
+#add{
+    border-color:trasparent;
+    color:green;
+    background-color:yellow;
+}
+h2{
+    color:white;
+}
+#showname{
+  color: white;
+  font-size: 25px;
+  background:#E212C457;
+  padding: 3px;
+  margin-bottom: 0;
+  margin: 10px;
+  border-bottom:2px solid #70E2123B;
+  border-radius:10px;
+  text-align: center;
+}
+#para{
+  color: white;
+  padding:3px;
+  background:#5D12E23B;
+  margin:3px;
+  border-radius:10px;
+}
+  </style>
+    </head>
+    <body>
+    <header id="a">Post It Here!</header>
+        <p id="b">
+            Good day ladies and gentle men, boys and girls, ex and crushers, family and enemies. My name is femi am.......wait* shabi you know me before? ehhhh no need for introduction nigbaye......ok!</p><p id="c">
+            This page is develope for you! yes you!....bcus i discorver that you're shy to tell me somethings bcus blah blah blah blah blah............things like, you wanna...</p><ul>
+    <li>wanna public my secret</li>
+    <li>shy to tell me through chat</li>
+    <li>you wanna insult me secretely</li>
+    <li>wanna tell me smth publicly but scared</li>
+    </ul>
+    <p id="d">
+             So i develope this page for you... Now drop that message, as you can see "name" and "message" are only required so definitely i cant track to know who send it to me, please share the link to friends in other to know people minds set toward me.
+        </p>
+        <br />
+        <br />
+        <form><center>
+             <input name="name" id="name" type="text" placeholder="@Your name" required>
+        <br />
+        <br />
+        <br />
+            <textarea id="msg" name="msg" placeholder="Your message" required min="5" max="600"></textarea>
+            <p>
+                <p id="wa"><a href="http://wa.me/+2348104156984">whatsapp me</a></p>
+                <p id="te"><a href="http://t.me/+2348104156984">telegram me<a/></p>
+            </p>
+            <button id="add" type="submit" onclick="writeUserData()">POST</button>
+        </center></form>
+        <div id="msgs">
+            <h2 class="load">
+                Loading...
+            </h2>
+        </div>
+       
+       
+       
+       
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+    apiKey: "***********",
+    authDomain: "cartoline-india.firebaseapp.co",
+    projectId: "cartoline-india",
+    storageBucket: "********************",
+    messagingSenderId: "********",
+    appId: "1:372576193203:web:*****",
+    measurementId: "G*******"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script> 
+  <script type="text/javascript" charset="utf-8">
+    alert("if you're a programmer please identify yoursef in the name input e.g....name=Html@femi OR python@femi OR javascript@femi............................................................................................thanks allot")
+    var database = firebase.database();
+
+
+    function writeUserData() {
+      var name = document.getElementById('name');
+      var msg = document.getElementById('msg');
+
+      if (name.valu === "" || msg.value === "") {
+        alert('please enter name and msgs for @femi');
+      } else {
+        firebase.database().ref('users/').push({
+          user: name.value,
+          message: msg.value,
+
+        });
+
+        console.log('added');
+      }
+
+
+    }
+    
+    
+    var data = firebase.database().ref('users/');
+data.on('value', function(snapshot) {
+
+ 
+             
+
+document.getElementById("msgs").innerHTML="";
+
+ var val = snapshot.val();
+ Object.keys(val).forEach((key) => {
+ 
+
+
+const div = document.createElement("div") 
+
+
+div.innerHTML = `
+<div id="chain">
+<div id="main">
+
+            
+            <h3 id="showname">${val[key].user.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</h3>
+            
+            <p id="para">${val[key].message.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</p>
+                <br />
+                
+                
+        <br><br><br>
+        
+`;
+
+
+document.getElementById("msgs").appendChild(div)
+
+ });
+
+});   
+    
+  </script>   
+    </body>
+</html>
