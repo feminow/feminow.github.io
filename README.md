@@ -1,2 +1,2 @@
-# femi.github.io
+# femih.github.io
 ## welcome to my GitHub
