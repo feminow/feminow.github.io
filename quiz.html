@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>quiz here</title>
+        <style>
+            body {
+    background-color:#336666;
+    color:white;
+}
+.bdy{
+    background-image: url("https://dl.dropbox.com/s/b6kmo6yonayp2s8/Screenshot_20210309-134448_5.png?");
+    background-repeat:no-repeat ;
+    background-attachment:fixed;
+    background-size:100% auto;
+}
+#ml{
+    margin-left:40px;
+}
+#yl{
+    margin-left:80px;
+}
+.a1{
+    font-size:40px;
+}
+#score{
+    margin-left:80px;
+}
+#face{
+    background-color:rgb(0,0,0,0.5);
+    height:83px;
+    margin-left:-8px;
+    width:360px;
+    margin-top:-5px;
+}
+#l{
+   margin-left:-8px;
+   width:360px; 
+}
+#ques{
+    margin-left:5px;
+}
+#by{
+    float:right;
+    margin-top:-10px;
+}
+#ans_con{
+    margin-top:30%;
+    width:320px;
+    height:150px;
+    background-color: rgb(0,0,0,0.5);
+    margin-left:3%;
+}
+#ans_box{
+    width:120px;
+    height:50px;
+    margin-left:0%;
+}
+#foot{
+    margin-top:96px;
+}
+#next{
+    width:330px;
+    height:30px;
+    border-color:rgb(0,225,0);
+    background-color:rgb(0,225,0);
+    color:white;
+    font-weight:bolder ;
+    text-align:center ;
+}
+hr{
+    border:0.5px solid grey;
+}
+#html_c{
+    color:white;
+    background-color:rgb(0,0,0,0.5);
+    margin-top:-8px;
+    margin-left:-8px;
+    width:360px;
+    height:50px;
+}
+#chall{
+    color:white;
+    background-color:ble;
+    width:60%;
+    height:20px;
+    margin-top:-8px;
+    font-size:30px;
+    text-align:center;
+}
+img{
+    width:40px;
+    height:64px;
+    border-radius:210px;
+}
+#you{
+    float:right;
+}
+#me{
+    float:left;
+}
+marquee{
+    margin-top:-8px;
+    font-size:12px;
+}
+input{
+    margin-top:20px;
+    width:210px;
+    height:17px;
+    text-align:left;
+}
+#a{
+    margin-top:4px;
+}
+#bdy{
+    display:none;
+}
+
+#total_box{
+    width:100%;
+    margin-top:40%;
+    height:150px;
+    background-color:blue;
+    border-radius:20px;
+    box-shadow:0px -15px 5px green;
+}
+#total{
+    width:80%;
+    height:120px;
+    margin-left:10%;
+}
+#win_lose, #score_t{
+    font-size:20px;
+    color:white;
+    text-align:center ;
+    font-weight:bolder;
+}
+#score_t{
+    margin-left:40%;
+}
+#myscore, #youscore{
+    font-size:20px;
+    color: rgb(0,255,0);
+}
+#bdy{
+    width: auto;
+    height:100%;
+    background-color: rgb(225,225,225,0.1);
+}
+#continu{
+    display:none;
+    width:w00px;
+    height:15px;
+    margin-top:30%;
+    margin-left:5%;
+    color:blue;
+    background-color:green;
+    text-align:center;
+}
+        </style>
+    </head>
+    <body><div id="content">
+    <div id="all">
+    <div id="html_c"><br><p id="chall">
+     HTML Challenge  
+    </p></div>
+    <marquee>progress bar in progress</marquee>
+       <p id="face">
+           <span id="me"><span id="ml">level 16</span><br><a href="https://www.sololearn.com/Profile/19895945/?ref=app"><img  src="https://dl.dropbox.com/s/bd1uu951jh3m45b/IMG_20210301_131339_051.jpg?"></a>femi
+           </span>
+              <span id="score">
+            <span id="ms">0</span>
+                  :
+            <span id="ys">0</span>
+              </span>
+           <span id="yl">level 16</span><br><span id="you"><span id="yn">femi</span><a id="yp"href="#you"><img id="your" src="https://api.sololearn.com/uploads/Avatars/1"></a></span>
+        </p>
+        
+        
+        <p id="ques">
+        <span id="que">
+            Which entity character creates a 'plus'</span> <br>
+        <span id="qub">symbol in HTML?</span>                                           
+        <br/><p id="by">by Chirag Bhansali</p>
+        </p>
+        
+        
+        
+<div id="ans_con" >
+<ol id="ans_box" type="A">
+<li><input type="button" value="&++" id="a"></li>
+<li><input type="button" value="+" id="b"></li>
+<li><input type="button" value="&plus" id="c"></li>
+<li><input type="button" value="sign+" id="d"></li>
+</ol>
+</div>
+       <p id="foot">
+       <hr id="l">
+       <center>
+       <p id="next" >Done Submit?</p>
+       </center></p>
+       </div>
+        <div id="bdy">
+        <div id="total_box">
+        <div id="total">
+            <p id="win_lose">
+                congratulation! we DRAWN
+            </p>
+            <p id="speech">
+            Wow! interesting just like computer you are. Please do share code...<br>
+     <p id="score_t">
+     TOTAL SCORE
+     <br>
+     <span id="myscore">0
+     </span>
+     <span id="dot">:
+     </span>
+     <span id="youscore">0
+     </span>
+      </p>
+      </p>
+    </div>
+    </div>
+    </div>
+    <div id="continu">
+        continue challenge
+    </div>
+    </div>
+    
+    <script>
+        /*setting your profile*/
+$(document).ready(function(){
+var img = prompt("enter ONLY  the number in your profile link e.g 19895945")
+var pa = "https://api.sololearn.com/uploads/Avatars/"
+var ap = "https://www.sololearn.com/Profile/"
+var bp = "/?ref=app"
+var cp = ap+img+bp
+var b = ".jpg"
+var c = pa+img+b
+$("#your").attr("src", c)
+$("#yp").attr("href", cp)
+if(img !==""){
+    $("#yn").text("👩‍💻👩‍💻👩‍💻")
+    $("#yl").text("level 🤦")
+}
+});
+
+
+
+
+
+
+
+
+
+/*when window fully loaded*/
+window.onload=function(){
+/*definig DOM*/
+var lose = document.getElementById("total_box")
+var gret = document.getElementById("win_lose")
+var spec = document.getElementById("speech")
+var you = document.getElementById("youscore")
+var mes = document.getElementById("myscore")
+var pla = document.getElementById("continu")
+var bdy = document.getElementById("bdy")
+var all = document.getElementById("all")
+var ne = document.getElementById("next")
+var qub = document.getElementById("qub")
+var bye = document.getElementById("by")
+var que = document.getElementById("que")
+var mm = document.getElementById("ms")
+var yy = document.getElementById("ys")
+var a = document.getElementById("a");
+var b = document.getElementById("b");
+var c = document.getElementById("c");
+var d = document.getElementById("d");
+var ys = 1
+var ms = 1
+var tr = 8
+
+
+
+
+
+/*checking answers*/
+
+$(function(){
+    $('#a').click(function(){
+        var val = $(this).val();
+        switch(val){
+         case "<br>":
+         case "<tr>":
+         case "<th>":
+         case "<br />":
+         case "Ok.js":
+            alert("correct")
+            yy.innerHTML=ys++
+            mm.innerHTML=ms++
+            break;
+         default:
+            alert("wrong")
+            mm.innerHTML=ms++
+        }
+         switch(a.value){
+             case "<br>":
+que.innerHTML="which of the following is use"
+qub.innerHTML="to create a block break"
+bye.innerHTML="by Sololearn"
+      a.value="<br />"  
+      b.value="<br>"
+      c.value="<break>"
+      d.value="<breaker>"
+        break;
+        case "<br />":
+que.innerHTML="which of the following tags"
+qub.innerHTML="is used to create amp symbol"
+bye.innerHTML="by FeMi"
+      a.value="&mp"  
+      b.value="&&"
+      c.value="&amp"
+      d.value="amp;"
+         break;
+         case "<th>":
+que.innerHTML="which of the following tags"
+qub.innerHTML="is used to create addition symbol"
+bye.innerHTML="by FeMi"
+      a.value="&amp"  
+      b.value="&add"
+      c.value="&plus"
+      d.value="&minus"
+         break;
+         case "Ok.js":
+que.innerHTML="which of the following is a"
+qub.innerHTML="way of creating variable"
+bye.innerHTML="by Sololearn"
+      a.value="b = (1,2,3,4,5)"  
+      b.value="b; b = (1,2,3,4,5)"
+      c.value="var b = (1,2,3,4,5)"
+      d.value="var b = b(1,2,3,4,5)"
+        break;
+        }
+});
+    
+    
+    
+    $('#b').click(function(){
+        var val = $(this).val();
+        switch(val){
+         case "lolz of course":
+         case "so funny":
+         case "yes":
+         case "really":
+         case "8":
+         case "3":
+         case "1":
+            alert("correct")
+            yy.innerHTML=ys++
+            mm.innerHTML=ms++
+            break;
+         default:
+            alert("wrong")
+            mm.innerHTML=ms++
+        }
+      switch(a.value){
+          case "nooooo":
+que.innerHTML="which of the following is the"
+qub.innerHTML="case of HTML"
+bye.innerHTML="by Sololearn"
+      a.value="Hyper text transfer protocol"  
+      b.value="Hyper text tranfers protocol"
+      c.value="Hyper protocol"
+      d.value="insensitive"
+        break;
+        case "2":
+que.innerHTML="which of the following"
+qub.innerHTML="heading comes first"
+bye.innerHTML="by Femih"
+      a.value="<header>"  
+      b.value="<head>"
+      c.value="<h6>"
+      d.value="<h1>"
+        break;
+        case "0":
+que.innerHTML="var a = 63;"
+qub.innerHTML="var b = 2; <br> console.log(a%b)"
+bye.innerHTML="by Femih"
+      a.value="1.26"  
+      b.value="1"
+      c.value="2"
+      d.value="61"
+        break;
+        case "1.26":
+que.innerHTML="in progress"
+qub.innerHTML="in progress"
+bye.innerHTML="by Femih"
+      a.value="click submit"  
+      b.value="click submit"
+      c.value="click submit"
+      d.value="click submit"
+        break;
+        
+      }
+});
+    
+    
+    
+    $('#c').click(function(){
+        var val = $(this).val();
+        switch(val){
+         case "&plus":
+         case "&amp":
+         case "&minus":
+         case "&add":
+         case "var b = (1,2,3,4,5)":
+            alert("correct")
+            yy.innerHTML=ys++
+            mm.innerHTML=ms++
+            break;
+         default:
+            alert("wrong")
+            mm.innerHTML=ms++
+        }
+        switch(a.value){
+          case "&++":
+que.innerHTML="which of the following tags"
+qub.innerHTML="is used to set an image tag"
+bye.innerHTML="by FeMi"
+      a.value="<media>"  
+      b.value="<image>"
+      c.value="<picture>"
+      d.value="<img>"
+         break;  
+         case "&mp":
+que.innerHTML="which of the following tags"
+qub.innerHTML="is used to create table head"
+bye.innerHTML="by FeMi"
+      a.value="<th>"  
+      b.value="<header>"
+      c.value="<tf>"
+      d.value="<caption>"
+         break;
+         case "&amp":
+que.innerHTML="which of the following tags"
+qub.innerHTML="is not a valid heading number"
+bye.innerHTML="by FeMi"
+      a.value="2"  
+      b.value="8"
+      c.value="6"
+      d.value="4"
+         break;
+         case "b = (1,2,3,4,5)":
+que.innerHTML="function func(){<br>console.log(arguements.length)<br>}"
+qub.innerHTML="func(1,2,4)"
+bye.innerHTML="by Femih"
+      a.value="0"  
+      b.value="3"
+      c.value="4"
+      d.value="2"
+        break;
+        }
+     
+});
+    
+    
+    
+    $('#d').click(function(){
+        var val = $(this).val();
+        switch(val){
+         case "<audio>":
+         case "<video>":
+         case "<img>":
+         case "<a>":
+         case "<h1>":
+         case "insensitive":
+            alert("correct")
+            yy.innerHTML=ys++
+            mm.innerHTML=ms++
+            break;
+         default:
+            alert("wrong")
+            mm.innerHTML=ms++
+        }
+    switch(a.value){
+        case "<media>":
+que.innerHTML="i hope you're enjoying me"
+qub.innerHTML="are you really sure"
+bye.innerHTML="by FeMi"
+      a.value="nooooo"  
+      b.value="lolz of course"
+      c.value="not at all"
+      d.value="not really"
+         break;
+         case "Hyper text transfer protocol":
+que.innerHTML="which of the following is an"
+qub.innerHTML="inline tag in HTML"
+bye.innerHTML="by Sololearn"
+      a.value="<br>"  
+      b.value="<ul>"
+      c.value="<li>"
+      d.value="<p>"
+        break;
+        case "<header>":
+que.innerHTML="which of the following is the"
+qub.innerHTML="use to play video in HTML5"
+bye.innerHTML="by Femih"
+      a.value="<videos>"  
+      b.value="<movie>"
+      c.value="<media>"
+      d.value="<video>"
+        break;
+        case "<videos>":
+que.innerHTML="HTML is bored lets move"
+qub.innerHTML="to JAVASCRIPT"
+bye.innerHTML="by Femi its self"
+      a.value="Ok.js"  
+      b.value=" "
+      c.value=" "
+      d.value=" "
+        break;
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+});
+
+
+
+
+
+
+
+/*next button*/
+$("#next").click(function(){
+    alert("do not forget to comment your scores")
+    all.style.display="none"
+    pla.style.display="none"
+    $("body").addClass("bdy")
+    bdy.style.display="block"
+    you.innerHTML=ys-1
+    mes.innerHTML=ms-1
+    if(ys<ms){
+    you.style.color="red"
+    lose.style.boxShadow="0px -15px 5px red"
+    gret.innerHTML="SORRY! YOU LOSE"
+    gret.style.fontSize="25px"
+    spec.innerHTML="Oops! i heard you lose, sorryyyyyyy put more effort you can do better next time"
+    }
+    else if(ys=ms){
+     spec.innerHTML="Wow! good of you fact that u can't win me at all its either you lose or we drawn"
+    }
+});
+$("#continu").click(function(){
+     all.style.display="block"
+     pla.style.display="none" 
+     $("body").removeClass("bdy")
+})
+
+}
+    </script>
+    </body>
+</html>
