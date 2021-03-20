@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facial Experession</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+    background-color:black;
+}
+body {
+    
+}
+#face{
+    width:200px;
+    height:200px;
+    margin-left:60px;
+    margin-top:300px;
+    background-color:teal;
+    border-radis:50%;
+}
+#a{
+    width:70px;
+    height:30px;
+    margin-top:10px;
+    margin-left:10px;
+    background-color:black;
+}
+#b{
+    width:70px;
+    height:30px;
+    margin-top:-45px;
+    margin-right:10px;
+    float:right;
+    background-color:black;
+}
+#c{
+    width:70px;
+    height:30px;
+    margin-top:-40px;
+    margin-left:10px;
+    background-color:white;
+}
+#d{
+    width:70px;
+    height:30px;
+    float:right;
+    margin-top:-45px;
+    margin-right:10px;
+    background-color:white;
+}
+#e{
+    width:30px;
+    height:20px;
+    margin-top:-40px;
+    margin-left:30px;
+    background-color:black;
+}
+#f{
+    width:30px;
+    height:20px;
+    float:right;
+    margin-top:-40px;
+    margin-right:-50px;
+    background-color:black;
+}
+#g{
+    width:10px;
+    height:10px;
+    margin-top:-36.5px;
+    margin-left:35px;
+    background-color:white;
+}
+#h{
+    width:10px;
+    height:10px;
+    float:right;
+    margin-top:-40px;
+    margin-right:-35px;
+    background-color:white;
+}
+#i{
+    margin-top:20px;
+    margin-left:77px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+       border-right: 25px solid transparent;
+       border-bottom: 50px solid #555;
+}
+#j{
+    width:80px;
+    height:20px;
+    margin-top:0px;
+    margin-left:64px;
+    background-color:black;
+}
+#k{
+    width:80px;
+    height:20px;
+    margin-top:-28px;
+    margin-left:64px;
+    background-color:black;
+}
+#l{
+    width:80px;
+    height:20px;
+    margin-top:-40px;
+    margin-left:64px;
+    background-color:white;
+}
+div,#a,#b,#c,#d,#e,#f,#g,#h,#j,#k,#l{
+    border-radius:50%;
+    text-align:center ;
+}
+#all{
+    width:300px;
+    hght:210px;
+    margin-top:10%;
+    margin-left:7%;
+}
+#one{
+    float:left;
+}
+span{
+    width:50px;
+    height:50px;
+    background-color:red;
+}
+.a,.b,.c{
+    margin-top:-16px;
+    width:102.5px;
+    height:60px;
+    margin-top:px;
+}
+#ccc,#aaa,#bbb{
+    background-color:yellow;
+}
+#pc,#pa,#pb{
+    background-color:red;
+}
+#cc,#aa,#bb{
+    background-color:green;
+}
+#two{
+    float:right;
+}
+#three{
+    float:right;
+    margin-right:102.5px;
+    margin-top:-180px;
+}
+#bdy{
+    width:100%;
+    height:600px;
+    background-color:grey;
+    margin-top:-80px;
+}
+        </style>
+    </head>
+    <body>
+    <input id="pi">
+    </input>
+    <br />
+    <input type="button" value="enter value" id="se">
+       <div id="all">
+           <div id="one">
+           <br />
+               <p id="pa" class="a"></p>
+               <p id="pb" class="a"></p>
+               <p id="pc" class="a"></p>
+           </div>
+
+           <div id="two">
+           <br />
+               <p id="aa" class="b"></p>
+               <p id="bb" class="b"></p>
+               <p id="cc" class="b"></p>
+           </div>
+
+           <div id="three">
+               <p id="aaa" class="c"></p>
+               <p id="bbb" class="c"></p>
+               <p id="ccc" class="c"></p>
+           </div>
+       </div>
+    
+       <div id="face">
+           <br />
+           <br />
+           <p id="a"></p>
+           <p id="b"></p>
+           <p id="c"></p>
+           <p id="d"></p>
+           <p id="e"></p>
+           <p id="f"></p>
+           <p id="g"></p>
+           <p id="h"></p>
+           <p id="i"></p>
+           <p id="j"></p>
+           <p id="k"></p>
+           <p id="l">HI</p>
+       </div> 
+       <input type="button" value="Her Crush" id="fr">
+       <br />
+       <input type="button" value="Your Gf" id="no">
+       <br />
+       <input type="button" value="You" id="ag">
+       <script>
+           window.onload=function(){
+var a = document.getElementById("a");
+var b = document.getElementById("b");
+var c = document.getElementById("c");
+var d = document.getElementById("d");
+var e = document.getElementById("e");
+var f = document.getElementById("f");
+var g = document.getElementById("g");
+var h = document.getElementById("h");
+var i = document.getElementById("i");
+var j = document.getElementById("j");
+var k = document.getElementById("k");
+var l = document.getElementById("l");
+var fr = document.getElementById("fr");
+var ag = document.getElementById("ag");
+var no = document.getElementById("no");
+var pa = document.getElementById("pa");
+var fa = document.getElementById("face");
+var pb = document.getElementById("pb");
+var pc = document.getElementById("pc");
+var aa = document.getElementById("aa");
+var bb = document.getElementById("bb");
+var cc = document.getElementById("cc");
+var al = document.getElementById("all")
+var bdy = document.getElementById("bdy")
+var aaa = document.getElementById("aaa");
+var bbb = document.getElementById("bbb");
+var ccc = document.getElementById("ccc");
+var se = document.getElementById("se");
+var pi = document.getElementById("pi");
+
+se.onclick=function(){
+pi.style.color=pi.value
+pa.onclick=function(){
+    pa.style.backgroundColor=pi.value
+}
+aa.onclick=function(){
+    aa.style.backgroundColor=pi.value
+}
+aaa.onclick=function(){
+    aaa.style.backgroundColor=pi.value
+}
+pb.onclick=function(){
+    pb.style.backgroundColor=pi.value
+}
+bb.onclick=function(){
+    bb.style.backgroundColor=pi.value
+}
+bbb.onclick=function(){
+    bbb.style.backgroundColor=pi.value
+}
+pc.onclick=function(){
+    pc.style.backgroundColor=pi.value
+}
+cc.onclick=function(){
+    cc.style.backgroundColor=pi.value
+}
+ccc.onclick=function(){
+    ccc.style.backgroundColor=pi.value
+}
+a.onclick=function(){
+    a.style.backgroundColor=pi.value
+}
+b.onclick=function(){
+    b.style.backgroundColor=pi.value
+}
+c.onclick=function(){
+    c.style.backgroundColor=pi.value
+}
+d.onclick=function(){
+    d.style.backgroundColor=pi.value
+}
+e.onclick=function(){
+    e.style.backgroundColor=pi.value
+}
+f.onclick=function(){
+    f.style.backgroundColor=pi.value
+}
+g.onclick=function(){
+    g.style.backgroundColor=pi.value
+}
+h.onclick=function(){
+    h.style.backgroundColor=pi.value
+}
+i.onclick=function(){
+    i.style.borderBottom="50px solid "+pi.value
+}
+j.onclick=function(){
+    j.style.backgroundColor=pi.value
+}
+k.onclick=function(){
+    k.style.backgroundColor=pi.value
+}
+l.onclick=function(){
+    l.style.backgroundColor=pi.value
+}
+fa.onclick=function(){
+    fa.style.backgroundColor=pi.value
+}
+}
+
+ag.onclick=function(){
+    fa.style.backgroundColor="red"
+    k.style.backgroundColor="red"
+    l.style.backgroundColor="red"
+    l.innerHTML="."
+    l.style.fontSize="40px"
+    c.style.backgroundColor="red"
+    d.style.backgroundColor="red"
+    g.style.backgroundColor="red"
+    h.style.backgroundColor="red"
+    j.style.backgroundColor="black"
+    i.style.borderBottom="50px solid black"
+}
+
+fr.onclick=function(){
+    fa.style.backgroundColor="black"
+    k.style.backgroundColor="green"
+    l.style.backgroundColor="green"
+    l.innerHTML="."
+    l.style.fontSize="40px"
+    c.style.backgroundColor="green"
+    d.style.backgroundColor="green"
+    g.style.backgroundColor="white"
+    g.style.width="7px"
+    g.style.marginLeft="40px"
+    g.style.height="7px"
+    h.style.width="7px"
+    h.style.height="7px"
+    h.style.backgroundColor="white"
+    j.style.backgroundColor="black"
+    i.style.borderBottom="50px solid black"
+}
+no.onclick=function(){
+    fa.style.backgroundColor="grey"
+    k.style.backgroundColor="pink"
+    l.style.backgroundColor="white"
+    l.innerHTML="Hi"
+    l.style.fontSize="20px"
+    g.style.marginLeft="40px"
+    g.style.width="7px"
+    g.style.height="7px"
+    h.style.width="7px"
+    h.style.height="7px"
+    c.style.backgroundColor="white"
+    d.style.backgroundColor="white"
+    g.style.backgroundColor="white"
+    h.style.backgroundColor="white"
+    j.style.backgroundColor="pink"
+    i.style.borderBottom="50px solid rgb(25,25,25,0.5)"
+
+}
+
+
+}
+alert("enter color name or rgb or hexadecimal in the input above then click enter and click on any part of the face or flag to change color OR click on the button below")
+       </script>
+    </body>
+</html>
